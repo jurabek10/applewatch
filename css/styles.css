@@ -198,3 +198,103 @@ main {
 }
 
 
+/* BENEFITS */
+.benefits {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.benefits-item {
+    width: 280px;
+} 
+
+.benefits-item:not(:last-child) {
+    margin-right: 80px;
+}
+
+.benefits-item-title {
+    margin: 0;
+    color: #222;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.benefits-item-text {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.benefits-item-img:not(:last-child) {
+    margin-right: 10px;
+}
+
+.learn-more {
+    display: flex;
+    text-decoration: none;
+}
+
+.learn-more-img {
+    display: block;
+    margin-right: 10px;
+}
+
+.learn-more-text {
+    margin: 0;
+    color: var(--primary);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 25.6px */
+    text-transform: uppercase;
+}
+
+
+/* NIKE-SECTION */
+.nike {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.nike-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.watch-in-hand-img {
+    margin: 0;
+    width: 400px;
+    height: 600px;
+}
+
+
+/* SITE-FOOTER */
+.site-footer {
+    height: 830px;
+    background-image: url("../img/runners 1.jpg");
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 1450 830;
+}
+
+.cta-content-footer-title {
+    color: #fff;
+}
+
+.cta-content-footer-text {
+    color: #fff;
+}
+
