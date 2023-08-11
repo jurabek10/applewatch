@@ -1,5 +1,12 @@
-/* GLOBAL STYLES */
+/* CUSTOM PROPS */
+:root {
+    --primary: #EA625C;
+    --text-color: #333;
 
+}
+
+
+/* GLOBAL STYLES */
 html {
     height: 100%;
     box-sizing: border-box;
@@ -22,7 +29,7 @@ body {
     line-height: 24px;
     font-family: "Roboto", "Arial", sans-serif;
     background-color: #fff;
-    color: #222;
+    color: var(--text-color);
 }
 
 img {
@@ -34,7 +41,7 @@ img {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     padding-left: 50px;
     padding-right: 50px;
     margin-right: auto;
@@ -47,3 +54,102 @@ main {
     flex-grow: 1;
 }
 
+
+/* SITE-HEADER */
+.site-header {
+    padding-top: 30px;
+}
+
+.site-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    margin-right: auto;
+    width: 35px;
+    height: 42px;
+}
+
+.site-logo:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.site-logo:active {
+    opacity: 0.6;
+}
+
+.site-logo-img {
+    display: block;
+    width: 35px;
+    height: 42px;
+    object-fit: contain;
+}
+
+
+/* SITE-NAV */
+.sitenav {
+    color: #333;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+} 
+
+.sitenav-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.sitenav-link {
+    display: block;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid transparent;
+    color: #333;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease;
+}
+
+.sitenav-link:hover {
+    border-bottom: 3px solid #333;
+}
+
+
+/* SERACH-FORM */
+.search-form-input {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 0;
+    border-bottom: 1px solid #333;
+    margin-left: 40px;
+}
+
+
+/* MAIN-CONTENT */
+.main-content {
+    padding-top: 85px;
+    padding-bottom: 70px;
+}
+
+
+/* HERO */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-content {
+    padding-top: 85px;
+    margin: 0;
+    width: 490px;
+}
