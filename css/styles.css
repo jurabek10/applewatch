@@ -79,6 +79,33 @@ main {
 }
 
 
+/* LINED-LINK */
+.lined-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 25.6px */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.lined-link::before {
+    width: 40px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-right: 10px;
+    content: "";
+    transition: width 0.3s ease;
+}
+
+.lined-link:hover::before {
+    width: 60px;
+}
+
+
 /* SITE-HEADER */
 .site-header {
     padding-top: 30px;
@@ -241,25 +268,6 @@ main {
 
 .benefits-item-img:not(:last-child) {
     margin-right: 10px;
-}
-
-.learn-more {
-    display: flex;
-    text-decoration: none;
-}
-
-.learn-more-img {
-    display: block;
-    margin-right: 10px;
-}
-
-.learn-more-text {
-    margin: 0;
-    color: var(--primary);
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%; /* 25.6px */
-    text-transform: uppercase;
 }
 
 
