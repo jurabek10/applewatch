@@ -294,13 +294,20 @@ main {
 
 
 /* SITE-FOOTER */
-.site-footer {
-    height: 830px;
+.runners {
     background-image: url("../img/runners 1.jpg");
     background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 1450 830;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed; 
 }
+
+.cta-content-footer {
+    padding-top: 240px;
+    padding-bottom: 240px;
+    margin-left: auto;
+} 
+
 
 .cta-content-footer-title {
     color: #fff;
@@ -308,5 +315,9 @@ main {
 
 .cta-content-footer-text {
     color: #fff;
-}
+    border-left: 3px solid #fff;
+} 
+
+
+
 
