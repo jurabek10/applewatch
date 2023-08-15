@@ -58,12 +58,14 @@ main {
 
 /* BUTTON */
 .main-button {
+    min-width: 260px;
     padding: 12px 38px;
     color: #FFF;
     text-align: center;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
     background-color: var(--primary);
     border: 0;
@@ -280,12 +282,14 @@ main {
 .nike-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .watch-in-hand-img {
     margin: 0;
     width: 400px;
     height: 600px;
+    object-fit: cover;
 }
 
 
